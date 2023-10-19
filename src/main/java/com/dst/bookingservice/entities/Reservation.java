@@ -19,5 +19,9 @@ public class Reservation {
     @Enumerated(EnumType.ORDINAL)
     ReservcationStatus reservcationStatus;
 
+    // many reservations to many rooms
+    @ManyToMany
+    Room room;
+
 
 }

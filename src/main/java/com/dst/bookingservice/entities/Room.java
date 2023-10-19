@@ -22,6 +22,8 @@ public class Room {
 
     boolean isBeachView;
 
+    boolean isBooked;
+
 
 
 }
