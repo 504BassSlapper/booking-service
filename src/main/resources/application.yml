@@ -1,6 +1,25 @@
 spring:
   jpa:
     generate-ddl: true
+  application:
+    name: booking-service
+  docker:
+    compose:
+      lifecycle-management: start_and_stop
 
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
 server:
-  port: 8085
+  port: 8761
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+
+
+
