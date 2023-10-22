@@ -21,7 +21,7 @@ public class BookingServiceApplication {
 			reservationRepository.save(Reservation.builder()
 					.price(120.23)
 					.title("4 rooms Cottage")
-					.reservcationStatus(ReservcationStatus.CREATED).build());
+					.reservcationStatus(ReservcationStatus.CANCELED).build());
 
 		};
 	}
